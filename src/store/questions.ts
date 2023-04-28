@@ -34,7 +34,7 @@ export const useQuestionsStore = create<State>()(devtools(persist((set, get) => 
       // using structureClone
       const newQuestions = structuredClone(questions)
       // find the index of the question
-      const questionIndex = newQuestions.findIndex(q => q.id === questionId)
+      const questionIndex = newQuestions.findIndex((q: any) => q.id === questionId)
       // get the info of the question
       const questionInfo = newQuestions[questionIndex]
       // ask if the user has already selected an answer
