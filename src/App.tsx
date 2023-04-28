@@ -1,6 +1,6 @@
 import './App.css'
 import { Container, Stack, Typography, useTheme } from '@mui/material'
-import { JavaScriptLogo } from './JavaScriptLogo'
+import { MicrosoftLogo } from './MicrosoftLogo'
 import { Start } from './Start'
 import { useQuestionsStore } from './store/questions'
 import { Game } from './Game'
@@ -20,16 +20,16 @@ function App () {
       <Container maxWidth='sm'>
 
         <Stack direction='row' gap={2} alignItems='center' justifyContent='center'>
-          <JavaScriptLogo />
+          <MicrosoftLogo />
           <Typography variant={medium ? 'h2' : 'h5'} component='h1'>
-            JavaScript Quiz
+            Microsoft Quiz
           </Typography>
 
 
         </Stack>
 
-          <strong style={{ fontSize: '18px', marginBottom: '48px', display: 'block' }}>
-            Test your knowledge of JavaScript 💪
+          <strong style={{ fontSize: '20px', marginBottom: '48px', display: 'block' }}>
+            Test your knowledge of PL-900 Certification 💪
           </strong>
 
         {questions.length === 0 && <Start />}
