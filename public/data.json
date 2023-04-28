@@ -39,13 +39,13 @@
     "id": 4,
     "question": "What is the artificial intelligence tool in Microsoft Power Platform?",
     "answers": [
-      "AI Builder.",
+      "Power Automate.",
       "Power Intelligence.",
       "Power Analytics.",
       "Power Data Science.",
       "None of the above."
     ],
-    "correctAnswer": "AI Builder."
+    "correctAnswer": 4
   },
   {
     "id": 5,
