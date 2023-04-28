@@ -13,7 +13,7 @@ interface State {
   reset: () => void
 }
 
-const API_URL = 'http://microsoft-quiz.vercel.app/'
+const API_URL = 'https://microsoft-quiz.vercel.app/'
 
 export const useQuestionsStore = create<State>()(devtools(persist((set, get) => {
   return {
