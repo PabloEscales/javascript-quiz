@@ -8,7 +8,7 @@ export const Results = () => {
 
   return (
     <div style={{ marginTop: '16px'}}>
-      <h1>¡Tus resultados</h1>
+      <h1>Your score:</h1>
 
       <strong>
         <p>✅ {correct} correctas</p>
@@ -17,7 +17,7 @@ export const Results = () => {
 
       <div style={{ marginTop: '16px' }}>
         <Button onClick={() => reset()}>
-          ¡Empezar de nuevo!
+          Start again!
         </Button>
       </div>
     </div>
