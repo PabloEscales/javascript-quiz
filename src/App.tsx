@@ -7,6 +7,7 @@ import { Game } from './Game'
 import { useQuestionsData } from './hooks/useQuestionsData'
 import { Results } from './Results'
 import useMediaQuery from "@mui/material/useMediaQuery";
+import { SocialIcon } from 'react-social-icons';
 
 function App () {
   const questions = useQuestionsStore(state => state.questions)
@@ -25,7 +26,6 @@ function App () {
             Microsoft Quiz
           </Typography>
 
-
         </Stack>
 
           <strong style={{ fontSize: '20px', marginBottom: '48px', display: 'block' }}>
@@ -36,7 +36,17 @@ function App () {
         {questions.length > 0 && unanswered > 0 && <Game />}
         {questions.length > 0 && unanswered === 0 && <Results />}
 
-        <strong style={{ display: 'block', fontSize: '14px', marginTop: '48px' }}>Develop with React, TypeScript & Zustand - <a style={{ color: 'yellow' }} href='https://github.com/PabloEscales/javascript-quiz'>Go to code</a></strong>
+        <strong style={{ display: 'block', fontSize: '14px', marginTop: '48px' }}>Develop with React, TypeScript & Zustand<a style={{ color: 'yellow' }} href='https://github.com/PabloEscales/javascript-quiz' target="_blank"><br/>
+
+        <SocialIcon
+          url="https://github.com/PabloEscales/microsoft-quiz"
+          fgColor='gray'
+          bgColor='transparent'
+          target="_blank"
+          style={{ marginBottom: "-6px" }}
+        />
+
+        <br/>View code</a></strong>
 
       </Container>
     </main>
